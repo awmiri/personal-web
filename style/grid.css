@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row > * {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col {
+  max-width: 100%;
+  flex-grow: 1;
+}
+.col-1 {
+  width: 8.3333%;
+  flex: 0 0 auto;
+}
+.col-1 {
+  width: 16.6666%;
+  flex: 0 0 auto;
+}
+.col-3 {
+  width: 25%;
+  flex: 0 0 auto;
+}
+.col-4 {
+  width: 33.3333%;
+  flex: 0 0 auto;
+}
+.col-5 {
+  width: 41.6666%;
+  flex: 0 0 auto;
+}
+.col-6 {
+  width: 50%;
+  flex: 0 0 auto;
+}
+.col-7 {
+  width: 58.3333%;
+  flex: 0 0 auto;
+}
+.col-8 {
+  width: 66.6666%;
+  flex: 0 0 auto;
+}
+.col-9 {
+  width: 75%;
+  flex: 0 0 auto;
+}
+.col-10 {
+  width: 83.3333%;
+  flex: 0 0 auto;
+}
+.col-11 {
+  width: 91.6666%;
+  flex: 0 0 auto;
+}
+.col-12 {
+  width: 100%;
+  flex: 0 0 auto;
+}
