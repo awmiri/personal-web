@@ -6,6 +6,8 @@
   --shadow-color: rgba(19, 182, 255, 0.24);
   --body-color: #fff;
   --section-color: #fff;
+  --orang-color: #f57f17;
+  --tifany-color: #09bead;
 }
 /* 
 
@@ -22,11 +24,112 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "poppins_regular";
+  font-family: "poppins";
   line-height: 1.5;
+}
+/* 
+
+reset style
+
+*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* 
 
 header
 
 */
+.header {
+  background-color: var(--body-color);
+  box-shadow: 0 0.7rem 4rem rgba(4, 195, 255, 16%);
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+/* 
+
+navigation
+
+*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.nav__menu-logo {
+  color: var(--tifany-color);
+  font-size: 5rem;
+  font-family: "poppins black";
+  margin: 0;
+}
+.nav__menu-list {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.nav__menu-item {
+  margin-left: 3rem;
+}
+.nav__menu-item:first-child {
+  margin-left: 0;
+}
+.nav__menu-link {
+  color: var(--text-color);
+  display: inline-block;
+  font-family: "Poppins Medium";
+  transition: all 150ms ease-in 150ms;
+}
+.nav__menu-link:hover {
+  color: var(--tifany-color);
+}
+/*
+
+creat icon for mobile
+
+*/
+.nav__close-icon {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.nav__close-line {
+  position: relative;
+}
+.nav__close-line::before,
+.nav__close-line::after,
+.nav__close-line {
+  content: " ";
+  background-color: var(--tifany-color);
+  width: 4rem;
+  height: 0.5rem;
+  display: block;
+  border-radius: 3rem;
+  transition: all 200ms ease-in;
+}
+.nav__close-line::after {
+  top: 1rem;
+  position: absolute;
+}
+.nav__close-line::before {
+  top: -1rem;
+  position: absolute;
+}
+.nav__close-icon--open .nav__close-line::after {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+.nav__close-icon--open .nav__close-line::before {
+  transform: translateY(1rem) rotate(45deg);
+}
+.nav__close-icon--open .nav__close-line {
+  background-color: var(--body-color);
+}
