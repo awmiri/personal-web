@@ -26,6 +26,9 @@
   .row-dir-colum {
     flex-direction: column-reverse;
   }
+  .about_us--content {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav__menu-list {
@@ -76,12 +79,24 @@
   .home__link {
     width: 18rem;
   }
+  .home {
+    height: 75rem;
+  }
   .home__photo {
     width: 40rem;
     height: 40rem;
   }
   .home__header--shape {
     display: none;
+  }
+  .home {
+    overflow: visible;
+  }
+  .about_us--links-wapper {
+    flex-direction: column;
+  }
+  .about__link {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 460px) {
