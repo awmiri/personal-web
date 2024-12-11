@@ -402,3 +402,41 @@ services section
 .service_item--text {
   margin: 0;
 }
+/* 
+
+resume section
+
+*/
+.resume_title--list {
+  position: relative;
+  z-index: 0;
+}
+.resume_title--list::before {
+  content: " ";
+  height: 100%;
+  width: 3rem;
+  background-color: var(--tifany-color);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+.resume_title--item {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 0.5rem;
+}
+.resume_title--item:first-child {
+  padding-top: 4rem;
+}
+.resume_title--item:last-child {
+  padding-bottom: 4rem;
+}
+.list__item--icon {
+}
+.list__item--icon::after {
+  content: " ";
+}
+.list__item--title {
+}
