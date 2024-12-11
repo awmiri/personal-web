@@ -74,13 +74,16 @@
   }
 }
 @media only screen and (max-width: 576px) {
-  .content__wrapper {
+  .home__links-wapper {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .home__link {
-    width: 18rem;
+    width: 100%;
   }
   .home {
-    height: 75rem;
+    height: auto;
   }
   .home__photo {
     width: 40rem;
@@ -105,9 +108,6 @@
     height: 35rem;
     background-position: -5rem;
   }
-  .home__link {
-    width: 15rem;
-  }
   .content__username {
     font-size: 2.2rem;
   }
@@ -120,14 +120,25 @@
     width: 32rem;
     height: 32rem;
   }
-  .home__link {
-    width: 12rem;
-  }
 }
 @media only screen and (max-width: 370px) {
   .home__photo {
     width: 28rem;
     height: 28rem;
     background-position: -5rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .home__photo {
+    width: 22rem;
+    height: 22rem;
+    background-position: -2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .home__photo {
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
   }
 }

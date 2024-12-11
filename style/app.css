@@ -20,6 +20,25 @@
   color: var(--text-color);
   background-color: var(--body-color);
 }
+/* backgrund color */
+.perpele {
+  background-color: #8540ff;
+}
+.yellow {
+  background-color: #ffc50c;
+}
+.pink {
+  background-color: #ec407a;
+}
+.hight_orang {
+  background-color: #ff6331;
+}
+.blue {
+  background-color: #13b6ff;
+}
+.green {
+  background-color: #49af46;
+}
 /* btn */
 .btn__commen-class {
   padding: 1.5rem 6rem;
@@ -34,30 +53,31 @@
   font-family: "poppins semibold";
 }
 /* heading */
-.about_us--heading {
+.heading {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 8rem;
+  padding-top: 20rem;
 }
-.about_us--main_heading {
+.main_heading {
   margin-bottom: 0;
-  margin-top: 8rem;
   color: var(--tifany-color);
   font-size: 3.5rem;
   font-family: "poppins bold";
 }
-.about_us--heading_text {
+.heading_text {
   margin-top: 1rem;
   color: var(--text-color);
+  letter-spacing: 0.35rem;
 }
-.about_us--heading_line {
+.heading_line {
   width: 23rem;
   height: 0.3rem;
   background: var(--tifany-color);
   position: relative;
 }
-.about_us--heading_line::after {
+.heading_line::after {
   content: " ";
   background: var(--tifany-color);
   position: absolute;
@@ -251,10 +271,10 @@ home section
 .home__links-wapper {
   margin-top: 5rem;
   display: flex;
+  gap: 2rem;
 }
 .home__link {
   box-shadow: 0 1.6rem 2rem rgba(11, 190, 173, 41%);
-  margin-right: 2rem;
 }
 .home__link:last-child {
   background-color: var(--orang-color);
@@ -342,4 +362,43 @@ about us section
 .about__link:last-child {
   box-shadow: 0 1.6rem 2.9rem rgba(245, 127, 23, 0.24);
   background-color: var(--orang-color);
+}
+/* 
+
+services section
+
+*/
+.services__wraper > .row > * {
+  margin-bottom: 3rem;
+}
+.service_item--web_design {
+  background-color: #8540ff;
+}
+.service_item {
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.service_item--wrper {
+  position: relative;
+  z-index: 2;
+}
+.service_item > .background__svg {
+  position: absolute;
+  bottom: -5.9rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+}
+.service_item--title {
+  font-family: "Poppins Bold";
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.service_item--text {
+  margin: 0;
 }
