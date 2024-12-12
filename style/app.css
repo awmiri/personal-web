@@ -418,11 +418,16 @@ services section
 resume section
 
 */
+/* 
+
+resume section( list item )
+
+*/
 .resume {
   background-color: var(--body-color);
   box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
   margin-top: 20rem;
-  padding: 10rem 0;
+  padding: 8rem 0;
   transform: skewY(-4deg);
 }
 .resume_title--list {
@@ -433,6 +438,8 @@ resume section
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 40rem;
+  margin-right: 4rem;
 }
 .resume_title--list::before {
   content: " ";
@@ -448,7 +455,7 @@ resume section
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   cursor: pointer;
 }
 .resume_title--item:last-child {
@@ -464,7 +471,7 @@ resume section
   bottom: 0;
   z-index: -1;
   border-radius: 2rem;
-  max-width: 27rem;
+  max-width: 29rem;
 }
 .resume_title--item_active::before {
   width: 100%;
@@ -483,4 +490,71 @@ resume section
   font-size: 1.8rem;
   margin-left: 3rem;
   transition: all 200ms ease-in;
+}
+/* 
+
+resume section(content)
+
+*/
+.resume__content--header,
+.resume__content--title,
+.resume__content--subtitle {
+  margin: 0;
+}
+.content__resume {
+  border-left: 0.3rem solid #0abead;
+  padding-left: 2rem;
+  /* padding-top: 1rem; */
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.resume__content--item_show {
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+}
+.resume__content--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resume__content--title {
+  color: #f57f17;
+  font-family: "poppins semibold";
+  font-size: 1.9rem;
+  position: relative;
+}
+.resume__content--title::before {
+  content: " ";
+  background-color: #09bead;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: -3.1rem;
+}
+.resume__content--date {
+  color: #fff;
+  background-color: #f57f17;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1.7rem rgba(245, 127, 23, 0.24);
+}
+.resume__content--subtitle {
+  font-family: "poppins semibold";
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+.resume__content--description {
+  margin-top: 1rem;
+  margin-top: 0.5rem;
+  max-width: 70rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume__content--item:last-child > p {
+  margin-bottom: 0;
 }
