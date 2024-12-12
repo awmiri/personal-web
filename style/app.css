@@ -58,7 +58,6 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 8rem;
-  padding-top: 20rem;
 }
 .main_heading {
   margin-bottom: 0;
@@ -97,6 +96,12 @@ helper class
 */
 .alin-item-center {
   align-items: center;
+}
+.skew-reset {
+  transform: skewY(4deg);
+}
+.h-full {
+  height: 100%;
 }
 /* 
 
@@ -297,6 +302,9 @@ home section
 about us section
 
 */
+.about-us {
+  margin-top: 20rem;
+}
 .about_us--content {
   box-shadow: 0 0 5.9rem rgba(96, 233, 255, 0.27);
   display: flex;
@@ -368,6 +376,9 @@ about us section
 services section
 
 */
+.services {
+  margin-top: 20rem;
+}
 .services__wraper > .row > * {
   margin-bottom: 3rem;
 }
@@ -407,36 +418,69 @@ services section
 resume section
 
 */
+.resume {
+  background-color: var(--body-color);
+  box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
+  margin-top: 20rem;
+  padding: 10rem 0;
+  transform: skewY(-4deg);
+}
 .resume_title--list {
   position: relative;
   z-index: 0;
+  background-color: var(--section-color);
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .resume_title--list::before {
   content: " ";
   height: 100%;
   width: 3rem;
-  background-color: var(--tifany-color);
+  background-color: #0abead;
   position: absolute;
   z-index: -1;
   left: 0;
 }
 .resume_title--item {
+  margin-bottom: 2.3rem;
   display: flex;
   align-items: center;
-  gap: 4rem;
-  margin-bottom: 2rem;
-  padding-left: 0.5rem;
-}
-.resume_title--item:first-child {
-  padding-top: 4rem;
+  position: relative;
+  padding: 0.8rem 0;
+  cursor: pointer;
 }
 .resume_title--item:last-child {
-  padding-bottom: 4rem;
+  margin-bottom: 0;
+}
+.resume_title--item::before {
+  content: " ";
+  width: 5rem;
+  background-color: #0abead;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 2rem;
+  max-width: 27rem;
+}
+.resume_title--item_active::before {
+  width: 100%;
+  transition: all 200ms ease-in;
+}
+.resume_title--item_active {
+  color: #fff;
 }
 .list__item--icon {
-}
-.list__item--icon::after {
-  content: " ";
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 0.25rem;
 }
 .list__item--title {
+  font-family: "poppins semibold";
+  font-size: 1.8rem;
+  margin-left: 3rem;
+  transition: all 200ms ease-in;
 }
