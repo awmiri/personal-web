@@ -55,15 +55,7 @@
   justify-content: center;
   font-family: "poppins semibold";
 }
-.perpele_pricing_btn {
-  background-color: #803afb;
-}
-.pink_pricing_btn {
-  background-color: #f5276c;
-}
-.orang_pricing_btn {
-  background-color: #f57f17 !important;
-}
+
 /* heading */
 .heading {
   display: flex;
@@ -627,5 +619,69 @@ pricing section
 
 */
 .pricing {
+  background-color: var(--body-color);
+  box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
   margin-top: 20rem;
+  padding: 8rem 0 14rem;
+  transform: skewY(-4deg);
+}
+.package {
+  box-shadow: 0 0 5.2rem rgba(96, 233, 255, 0.27);
+}
+.package__header_content {
+  text-align: center;
+  padding: 2rem 0;
+  color: #fff;
+}
+.package_title,
+.package_price {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.package_title {
+  font-family: "poppins semibold";
+  font-size: 2.2rem;
+}
+.package_price {
+  font-family: "poppins semibold";
+  font-size: 1.8rem;
+}
+.package_content {
+  margin: 0;
+}
+
+.package__botton_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 0 5rem;
+}
+.package__list {
+}
+.package_items {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.package_items:last-child {
+  margin-bottom: 0;
+}
+.package_item__icon {
+}
+.perpele_pricing_btn {
+  background-color: #803afb;
+  box-shadow: 0 1.6rem 2.8rem rgba(128, 58, 251, 0.24);
+}
+.pink_pricing_btn {
+  background-color: #f5276c;
+  box-shadow: 0 1.6rem 2.8rem rgba(245, 39, 108, 0.24);
+}
+.orang_pricing_btn {
+  background-color: #f57f17;
+  box-shadow: 0 1.6rem 2.8rem rgba(245, 127, 23, 0.24);
+}
+
+.package__btn:nth-child() {
 }
