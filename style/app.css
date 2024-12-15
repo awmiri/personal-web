@@ -39,6 +39,9 @@
 .green {
   background-color: #49af46;
 }
+.orang {
+  background-color: #ff6331;
+}
 /* btn */
 .btn__commen-class {
   padding: 1.5rem 6rem;
@@ -51,6 +54,15 @@
   align-items: center;
   justify-content: center;
   font-family: "poppins semibold";
+}
+.perpele_pricing_btn {
+  background-color: #803afb;
+}
+.pink_pricing_btn {
+  background-color: #f5276c;
+}
+.orang_pricing_btn {
+  background-color: #f57f17 !important;
 }
 /* heading */
 .heading {
@@ -608,4 +620,12 @@ portofilo section
 .potofolio__content--shows {
   height: auto;
   opacity: 1;
+}
+/* 
+
+pricing section
+
+*/
+.pricing {
+  margin-top: 20rem;
 }
