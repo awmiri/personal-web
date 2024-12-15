@@ -3,6 +3,7 @@ const closeIcon = $.querySelector('.nav__close-icon')
 const getUlElem = $.querySelector('.nav__menu-list')
 const getDarkBackgrund = $.querySelector('.cover')
 const getListItems = $.querySelectorAll('.resume_title--item')
+const getListPortofilo = $.querySelectorAll('.portofilo_item')
 
 
 closeIcon.addEventListener('click' , function () {
@@ -18,5 +19,14 @@ getListItems.forEach(function (getListItem){
         $.querySelector('.resume__content--item_show').classList.remove('resume__content--item_show')
         let checkClass = this.getAttribute('content-id')
         $.querySelector(checkClass).classList.add("resume__content--item_show")
+    })
+})
+getListPortofilo.forEach(function(portofilo){
+    portofilo.addEventListener('click' , function () {
+       $.querySelector(".portofilo_item--active").classList.remove("portofilo_item--active")
+       this.classList.add('portofilo_item--active')
+        $.querySelector('.potofolio__content--shows').classList.remove('potofolio__content--shows')
+        let getId = this.getAttribute('content-id')
+        $.querySelector(getId).classList.add('potofolio__content--shows')
     })
 })

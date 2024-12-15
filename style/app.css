@@ -562,3 +562,50 @@ resume section(content)
 portofilo section
 
 */
+.portfolio {
+  margin-top: 20rem;
+}
+.portofilo__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.portofilo_item {
+  padding: 1rem 4rem;
+  border-radius: 3rem;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.portofilo_item--active {
+  background-color: #0abead;
+
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  width: 2.2rem !important ;
+  height: 2.2rem !important ;
+  border: 5px solid #bfbebe !important;
+  background-color: #fff !important;
+}
+.swiper-pagination-bullet-active {
+  border-color: var(--tifany-color) !important;
+}
+.prtofolio-content__img {
+  width: 100%;
+}
+.swiper-pagination {
+  position: static !important;
+  margin-top: 1rem !important;
+}
+.potofolio__content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.potofolio__content--shows {
+  height: auto;
+  opacity: 1;
+}

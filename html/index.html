@@ -435,34 +435,82 @@
             </div>
         </section>
         <section class="portfolio">
-            <div class="containner">
+            <div class="container">
                 <div class="heading">
                     <h3 class="main_heading">Portfolio</h3>
                     <p class="heading_text">Check in Our Latest Works</p>
                     <span class="heading_line"></span>
                 </div>
-                <div class="portfolio__header__btn">
-                    <ul class="portofilo__header_list">
-                        <li class="portofilo_item">All Work</li>
-                        <li class="portofilo_item">Illustration</li>
-                        <li class="portofilo_item">Animation</li>
+                    <ul class="portofilo__list">
+                        <li class="portofilo_item portofilo_item--active" content-id="#all_work">All Work</li>
+                        <li class="portofilo_item" content-id="#illustration">Illustration</li>
+                        <li class="portofilo_item" content-id="#animation">Animation</li>
                         <li class="portofilo_item">App UI</li>
                         <li class="portofilo_item">Web UI</li>
                         <li class="portofilo_item">Social Media</li>
                         <li class="portofilo_item">Print Design</li>
                     </ul>
-                </div>
-                <div class="potofolio__content">
-                    <div class="swiper">
+                <div class="potofolio__content potofolio__content--shows" id="all_work">
+                    <div class="swiper1">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                            <img src="../images/page-img/portfolio-1.jpg" alt="portfolio">
+                            <img src="../images/page-img/portfolio-1.jpg" alt="portfolio" class="prtofolio-content__img">
                           </div>
                           <div class="swiper-slide">
-                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
                           </div>
                           <div class="swiper-slide">
-                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio">
+                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-1.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      
+                </div>
+                <div class="potofolio__content" id="illustration">
+                    <div class="swiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>  
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-1.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>  
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>  
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>  
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>  
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      
+                </div>
+                <div class="potofolio__content" id="animation">
+                    <div class="swiper3">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-2.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio" class="prtofolio-content__img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="../images/page-img/portfolio-3.jpg" alt="portfolio" class="prtofolio-content__img">
                           </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -476,11 +524,27 @@
     <script src="../javascript/app.js"></script>
     <script src="../javascript/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-        const swiper = new Swiper('.swiper' , {
+        const swiperObject = {
+        slidesPerView: 1,
            pagination : {
             el:'.swiper-pagination',
            },
-        });
+           spaceBetween: 30,
+           breakpoints:{
+            720 :{
+                slidesPerView: 2,
+            },
+            992 : {
+                slidesPerView: 3,
+            },
+       }, 
+        } 
+    
+
+       const swiper1 = new Swiper('.swiper1' , swiperObject)
+       const swiper2 = new Swiper('.swiper2' , swiperObject)
+       const swiper3 = new Swiper('.swiper3' , swiperObject)
+       
     </script>
 </body>
 </html>
