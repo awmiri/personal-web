@@ -65,6 +65,10 @@
   .package {
     margin-bottom: 3rem;
   }
+  .footer__wraper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .nav__menu-list {
@@ -107,6 +111,12 @@
   .cover--active {
     background-color: rgba(0, 0, 0, 5%);
     z-index: 99;
+  }
+  .contact_us__location {
+    display: none;
+  }
+  .contact__content {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 576px) {

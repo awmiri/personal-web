@@ -685,3 +685,123 @@ pricing section
 
 .package__btn:nth-child() {
 }
+/* 
+
+contact us section
+
+*/
+.contact_us {
+  margin-top: 20rem;
+}
+.contact_us__wraper {
+  background-image: url(../images/page-img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0 5rem;
+  position: relative;
+}
+.contact__content {
+  background-color: var(--section-color);
+  max-width: 48rem;
+  margin-left: auto;
+  padding: 3rem;
+  box-shadow: 0 0 4rem rgba(19, 182, 255, 0.24);
+}
+.inputs__title {
+  margin: 0;
+  font-family: "poppins bold";
+  font-size: 2.2rem;
+  color: var(--tifany-color);
+}
+.content__form {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content__input {
+  padding: 1rem 1.5rem;
+  background-color: var(--body-color);
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  color: var(--text-color);
+}
+.content__input::placeholder {
+  color: var(--text-color);
+}
+.content__textarea {
+  resize: vertical;
+  max-height: 14rem;
+}
+.content__btn {
+  padding: 1rem 1.5rem;
+  background-color: var(--tifany-color);
+  color: #fff;
+  border-radius: 5rem;
+  font-family: "poppins semibold";
+  border: none;
+  cursor: pointer;
+}
+.contact_us__location {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  background-color: #fff;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.contact_us__location_icon {
+  width: 2rem;
+}
+/* 
+
+footer
+
+*/
+.footer {
+  padding: 2rem 0;
+  background-color: var(--body-color);
+}
+.footer__wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copr_right {
+  letter-spacing: 0.35rem;
+  color: var(--text-color);
+  font-family: "poppins semibold";
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer__social {
+  width: 4rem;
+  height: 4rem;
+  background-color: #1f2935;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease-in 100ms;
+}
+.footer__social:hover {
+  background-color: var(--tifany-color);
+}
+.footer__social svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--section-color);
+}
