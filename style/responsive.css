@@ -53,14 +53,18 @@
     background-color: transparent;
     margin-bottom: 1.5rem;
   }
-  .resume_title--item {
+  .resume_title--item_active {
     background-color: var(--tifany-color);
+  }
+  .resume_title--item {
     margin: 0 1.5rem 1.5rem 0;
     border-radius: 3rem;
     padding: 1rem 2rem;
+    font-family: "poppins";
   }
   .list__item--title {
     margin: 0;
+    font-family: "poppins";
   }
   .package {
     margin-bottom: 3rem;
@@ -68,6 +72,9 @@
   .footer__wraper {
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+  .about_right_content--wraper {
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 768px) {

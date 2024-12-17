@@ -23,24 +23,31 @@
 /* backgrund color */
 .perpele {
   background-color: #8540ff;
+  box-shadow: 0 0.3rem 3.5rem rgba(118 13 255, 0.35);
 }
 .yellow {
   background-color: #ffc50c;
+  box-shadow: 0 0.3rem 3.5rem rgba(255, 197, 12, 0.35);
 }
 .pink {
   background-color: #ec407a;
+  box-shadow: 0 0.3rem 3.5rem rgba(236, 64, 122, 0.35);
 }
 .hight_orang {
   background-color: #ff6331;
+  box-shadow: 0 0.3rem 3.5rem rgba(255, 99, 49, 0.35);
 }
 .blue {
   background-color: #13b6ff;
+  box-shadow: 0 0.3rem 3.5rem rgba(19, 182, 255, 0.35);
 }
 .green {
   background-color: #49af46;
+  box-shadow: 0 0.3rem 3.5rem rgba(73, 175, 70, 0.35);
 }
 .orang {
   background-color: #ff6331;
+  box-shadow: 0 0.3rem 3.5rem rgba(red, green, blue, alpha);
 }
 /* btn */
 .btn__commen-class {
@@ -102,7 +109,7 @@ helper class
   align-items: center;
 }
 .skew-reset {
-  transform: skewY(4deg);
+  transform: translateZ(0) skewY(4deg);
 }
 .h-full {
   height: 100%;
@@ -178,10 +185,14 @@ navigation
 .nav__menu-item {
   margin-left: 3rem;
 }
+.nav__menu__item--active {
+  color: var(--tifany-color);
+}
 .nav__menu-item:first-child {
   margin-left: 0;
 }
 .nav__menu-link {
+  color: inherit;
   display: inline-block;
   font-family: "Poppins Medium";
   transition: all 150ms ease-in 150ms;
@@ -307,7 +318,7 @@ about us section
 
 */
 .about-us {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .about_us--content {
   box-shadow: 0 0 5.9rem rgba(96, 233, 255, 0.27);
@@ -381,7 +392,7 @@ services section
 
 */
 .services {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .services__wraper > .row > * {
   margin-bottom: 3rem;
@@ -430,9 +441,9 @@ resume section( list item )
 .resume {
   background-color: var(--body-color);
   box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
-  margin-top: 20rem;
+  margin-top: 8rem;
   padding: 8rem 0;
-  transform: skewY(-4deg);
+  transform: translateZ(0) skewY(-4deg);
 }
 .resume_title--list {
   position: relative;
@@ -567,7 +578,7 @@ portofilo section
 
 */
 .portfolio {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .portofilo__list {
   display: flex;
@@ -621,9 +632,9 @@ pricing section
 .pricing {
   background-color: var(--body-color);
   box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
-  margin-top: 20rem;
+  margin-top: 8rem;
   padding: 8rem 0 14rem;
-  transform: skewY(-4deg);
+  transform: translateZ(0) skewY(-4deg);
 }
 .package {
   box-shadow: 0 0 5.2rem rgba(96, 233, 255, 0.27);
@@ -682,6 +693,15 @@ pricing section
   background-color: #f57f17;
   box-shadow: 0 1.6rem 2.8rem rgba(245, 127, 23, 0.24);
 }
+.perpele_heade-gbc {
+  background-color: #8540ff;
+}
+.pink_heade-gbc {
+  background-color: #ec407a;
+}
+.orang_heade-gbc {
+  background-color: #ff6331;
+}
 
 .package__btn:nth-child() {
 }
@@ -691,7 +711,7 @@ contact us section
 
 */
 .contact_us {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .contact_us__wraper {
   background-image: url(../images/page-img/map.jpg);

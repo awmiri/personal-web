@@ -4,6 +4,8 @@ const getUlElem = $.querySelector('.nav__menu-list')
 const getDarkBackgrund = $.querySelector('.cover')
 const getListItems = $.querySelectorAll('.resume_title--item')
 const getListPortofilo = $.querySelectorAll('.portofilo_item')
+const getnNavList = $.querySelectorAll('.nav__menu-item')
+const sections = $.querySelectorAll('main > section')
 
 
 closeIcon.addEventListener('click' , function () {
@@ -29,4 +31,38 @@ getListPortofilo.forEach(function(portofilo){
         let getId = this.getAttribute('content-id')
         $.querySelector(getId).classList.add('potofolio__content--shows')
     })
+})
+getnNavList.forEach(function (list) {
+    list.addEventListener('click' , function (event) {
+        event.preventDefault() 
+        $.querySelector('.nav__menu__item--active').classList.remove('nav__menu__item--active')
+        this.classList.add('nav__menu__item--active')
+        let getCustomAttribute = list.getAttribute('data-id-header')
+        let heightTop = $.querySelector(`.${getCustomAttribute}`).offsetTop
+        
+       window.scrollTo({
+        top :heightTop -100 ,
+        behavior:'smooth'
+ })
+    })
+})
+
+let observer = new IntersectionObserver(observerHancler , {
+    threshold : 0.4
+})
+
+function observerHancler(allSection) {
+    allSection.map(function (section) {
+        let getClass = section.target.className
+        if ( section.isIntersecting) {
+            $.querySelector(`.nav__menu-item[data-id-header=${getClass}]`).classList.add('nav__menu__item--active')
+        }else{
+            $.querySelector(`.nav__menu-item[data-id-header=${getClass}]`).classList.remove('nav__menu__item--active')
+        } 
+
+    })
+}
+
+sections.forEach(function (section) {
+    observer.observe(section)
 })
