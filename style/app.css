@@ -807,7 +807,8 @@ footer
   flex-wrap: wrap;
   gap: 1rem;
 }
-.footer__social {
+.footer__social,
+.dark_mode__btn {
   width: 4rem;
   height: 4rem;
   background-color: #1f2935;
@@ -816,11 +817,13 @@ footer
   align-items: center;
   justify-content: center;
   transition: all 100ms ease-in 100ms;
+  cursor: pointer;
 }
 .footer__social:hover {
   background-color: var(--tifany-color);
 }
-.footer__social svg {
+.footer__social svg,
+.dark_mode__btn svg {
   width: 3rem;
   height: 3rem;
   fill: var(--section-color);
