@@ -10,6 +10,32 @@
   --tifany-color: #09bead;
   --white-color: #fff;
 }
+:root.dark_mode {
+  --text-color: #95a5c6;
+  --body-color: #161d26;
+  --section-color: #1f2935;
+  --white-color: #fff;
+}
+:root.dark_mode .header,
+:root.dark_mode .home__photo,
+:root.dark_mode .about_us--content,
+:root.dark_mode .resume,
+:root.dark_mode .resume_title--list,
+:root.dark_mode .pricing,
+:root.dark_mode .package,
+:root.dark_mode .contact__content {
+  box-shadow: none;
+}
+:root.dark_mode .home__header--shape path {
+  fill: #1f2935;
+}
+:root.dark_mode .package_item__icon path {
+  stroke: #1f2935;
+  stroke-width: 0.5;
+}
+:root.dark_mode .resume__content--title {
+  color: #f57f17;
+}
 /* 
 
  commen code
@@ -153,7 +179,7 @@ header
 
 */
 .header {
-  background-color: var(--body-color);
+  background-color: var(--section-color);
   box-shadow: 0 0.7rem 4rem rgba(4, 195, 255, 16%);
   z-index: 100;
   position: fixed;
@@ -309,7 +335,7 @@ home section
   background-position: -5rem;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2rem solid var(--body-color);
+  border: 2rem solid var(--section-color);
   box-shadow: 0 0 5.8rem rgba(96, 233, 255, 27%);
 }
 /* 
@@ -335,6 +361,7 @@ about us section
 .about_right_content--wraper {
   flex-basis: 50%;
   padding: 1rem 3rem;
+  background-color: var(--section-color);
 }
 .about_us--content_title {
   font-family: "poppins semibold";
@@ -439,7 +466,7 @@ resume section( list item )
 
 */
 .resume {
-  background-color: var(--body-color);
+  background-color: var(--section-color);
   box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
   margin-top: 8rem;
   padding: 8rem 0;
@@ -448,7 +475,7 @@ resume section( list item )
 .resume_title--list {
   position: relative;
   z-index: 0;
-  background-color: var(--section-color);
+  background-color: var(--body-color);
   box-shadow: 0 0 4rem rgba(96, 233, 255, 0.27);
   display: flex;
   flex-direction: column;
@@ -459,7 +486,7 @@ resume section( list item )
 .resume_title--list::before {
   content: " ";
   height: 100%;
-  width: 3rem;
+  width: 3.3rem;
   background-color: #0abead;
   position: absolute;
   z-index: -1;
@@ -487,6 +514,7 @@ resume section( list item )
   z-index: -1;
   border-radius: 2rem;
   max-width: 29rem;
+  box-shadow: 0 0 3rem rgba(96, 233, 255, 0.27);
 }
 .resume_title--item_active::before {
   width: 100%;
@@ -601,8 +629,9 @@ portofilo section
 .swiper-pagination-bullet {
   width: 2.2rem !important ;
   height: 2.2rem !important ;
-  border: 5px solid #bfbebe !important;
+  border: 4px solid #bfbebe !important;
   background-color: #fff !important;
+  opacity: 1 !important;
 }
 .swiper-pagination-bullet-active {
   border-color: var(--tifany-color) !important;
@@ -630,7 +659,7 @@ pricing section
 
 */
 .pricing {
-  background-color: var(--body-color);
+  background-color: var(--section-color);
   box-shadow: 0 0 8rem rgba(19, 182, 255, 0.24);
   margin-top: 8rem;
   padding: 8rem 0 14rem;
@@ -667,6 +696,7 @@ pricing section
   flex-direction: column;
   gap: 3rem;
   padding: 3rem 0 5rem;
+  background-color: var(--body-color);
 }
 .package__list {
 }
@@ -770,7 +800,7 @@ contact us section
   width: 5rem;
   height: 5rem;
   display: flex;
-  background-color: #fff;
+  background-color: var(--section-color);
   border-radius: 100%;
   align-items: center;
   justify-content: center;
@@ -827,4 +857,7 @@ footer
   width: 3rem;
   height: 3rem;
   fill: var(--section-color);
+}
+.dark_mode__btn svg {
+  fill: #fff;
 }
