@@ -125,6 +125,9 @@
   .contact__content {
     margin: 0 auto;
   }
+  * {
+    cursor: default !important;
+  }
 }
 @media only screen and (max-width: 576px) {
   .home__links-wapper {
